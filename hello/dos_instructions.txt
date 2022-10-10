@@ -1,0 +1,20 @@
+1、dir
+    展示当前目录下所有可见文件
+2、md DIR_NAME1 DIR_NAME2 ...
+    创建目录
+3、rd DIR_NAME
+    删除空目录
+4、rd /q/s DIR_NAME
+    递归删除该目录及目录内所有文件
+    /q：不询问
+    /s：递归删除
+5、echo CONTENT > FIL_NAME
+    通过管道将CONTENT内容写到FIL_NAME中，如果不存在则创建，否则覆盖
+6、copy FIL_NAME1 FIL_NAME2
+    将文件1拷贝到2中，可以指定路径
+7、move FIL_NAME1 FIL_NAME2
+    将文件1剪切到2中，可以指定路径
+8、del FIL_NAME
+    删除文件，不会放到回收站！慎重删除！
+9、ren FIL_NAME1 FIL_NAME2
+    重命名文件
