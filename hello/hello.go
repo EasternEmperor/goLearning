@@ -1,6 +1,10 @@
 // 输出hello world
 
 package main		// hello.go所在的包
+/*
+package表示该go文件在哪个包下，这里是main包。同时在一个包下只能有一个main函数！
+*/
+
 import "fmt"
 
 func main() {
