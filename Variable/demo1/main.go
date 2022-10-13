@@ -9,7 +9,7 @@ import "fmt"
 
 func main() {
 	// 定义变量
-	var num1 intj
+	var num1 int
 	// 变量赋值
 	num1 = 10
 	// 使用变量
@@ -20,4 +20,8 @@ func main() {
 
 	name := "Tom"
 	fmt.Println("name = ", name)
+
+	// int等属于预定义标识符，可以做变量名，但最好不要！
+	int := 10
+	fmt.Println("int =", int)
 }
