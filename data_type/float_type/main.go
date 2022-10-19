@@ -14,4 +14,7 @@ func main() {
 	fmt.Println("b =", b)		// shift alt ↓	复制行
 	c := 512.34e-2
 	fmt.Println("c =", c)
+
+	var d float32 = 100
+	fmt.Println(d)
 }
