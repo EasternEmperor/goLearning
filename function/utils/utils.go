@@ -19,3 +19,13 @@ func Cal(n1 float64, n2 float64, operator byte) float64 {
 	}
 	return res
 }
+
+// 返回和、差
+func GetSumAndSub(n1 int, n2 int) (int, int) {
+	return n1 + n2, n1 - n2
+}
+
+// 返回和
+func GetSum(n1 int, n2 int) int {
+	return n1 + n2
+}
