@@ -29,3 +29,7 @@
 - %v：原值输出，可以用来输出结构体
 - %T：数据类型
 - %t：bool值"false"/"true"输出
+
+### 值类型和引用类型
+1. **值类型**：基本数据类型int系列、float系列，bool，string，数组和结构体struct
+2. **引用类型**：指针，切片slice，map，管道chan，interface等
