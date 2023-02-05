@@ -88,5 +88,7 @@ func main() {
 		fmt.Println("jsonStr: ", string(jsonStr))	// 注意转换出来的为byte数组，要转为string再输出
 	}
 
+	// 对结构体变量使用&，并打印时，不会打印地址，而是打印其值。如下
+	fmt.Println(&p)
 
 }

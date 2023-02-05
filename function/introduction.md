@@ -49,7 +49,7 @@ func 函数名 (形参列表) (返回值列表) {
     名字为sum和sub的变量返回
 7. Go支持可变参数：
     - 支持0到多个参数：
-        func sum(args... int) sum int {...}
+        func sum(args ...int) sum int {...}
     - 说明：
         1. args是切片（不定长数组），通过args[index]来访问元素
         2. 可变参数必须放在形参列表的最后面
