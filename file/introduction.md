@@ -20,7 +20,7 @@
     从rd读取的*Reader
         - 注意：这里传入的io.Reader是一个接口，而File结构体实现了该接口，因此可以直接传入
         File实例
-    - func (b *Reader) ReaderString(delim byte) (line string, err error): 读取直到第一次
+    - func (b *Reader) ReadString(delim byte) (line string, err error): 读取直到第一次
     遇到**delim**字符，以string返回读取数据，若有错误则报错err
 2. 一次读入：io/ioutil包中的ReadFile()方法
     - func ReadFile(name string) ([]byte, error)
@@ -40,8 +40,10 @@
             O_TRUNC         // 打开时清空文件
         }
     - perm: 权限控制(linux)
-2. 带缓存的写：os.OpenFile, file.Close, bufio.NewWriter, writer.WriterString, writer.Flush函数和方法
-    - 类似读取，这里是带缓存的写，通过bufio.NewWriter创建的writer，先用WriterString写入
+2. 带缓存的写：os.OpenFile, file.Close, bufio.NewWriter, writer.WriteString, writer.Flush函数和方法
+    - func (b *Writer) WriteString(s string) (int, error): 写入s，返回写入的字节数，如果int
+    <len(s)，则error报错说明
+    - 类似读取，这里是带缓存的写，通过bufio.NewWriter创建的writer，先用WriteString写入
     缓存，最后需要调用Flush方法将写入缓存的数据写入文件
     - 最后不要忘记调用Flush方法写入文件！
 3. 一次写入：io/ioutil包中的WriteFile()方法

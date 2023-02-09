@@ -13,6 +13,7 @@ func main() {
 
 // go build xx.go	编译
 // go build -o xx.exe xx.go		可以指定.exe文件的名字
+// go build -race xxx.go		编译时查看该文件运行是否会出现资源竞争情况
 // xx.exe			运行
 // go run xx.go		编译运行，较慢
 
